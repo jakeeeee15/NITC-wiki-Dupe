@@ -1,0 +1,63 @@
+site_name: NITC Wiki
+
+theme:
+  name: material
+  
+  # 🎨 Typography Upgrades: Modern, clean fonts
+  font:
+    text: Inter
+    code: Fira Code
+    
+  # ✨ UI/UX Features: No top tabs, strictly left-sidebar navigation
+  features:
+    - navigation.sections      # Groups sidebar items cleanly
+    - navigation.top           # Adds a "Back to Top" button when scrolling
+    - search.suggest           # Auto-completes search queries
+    - search.highlight         # Highlights the searched word on the actual page
+    - content.code.copy        # Adds a "Copy" button to all code blocks
+
+  # 🌗 Dark/Light Mode Palette
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+copyright: Copyright &copy; 2026 Jake John George 
+# 🛠️ Markdown Extensions (The engine behind the aesthetics and graphs)
+markdown_extensions:
+  
+  # 📊 The definitive Mermaid.js configuration
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          
+  # 💡 Admonitions (Allows you to create beautiful Warning, Info, and Note boxes)
+  - admonition
+  - pymdownx.details         # Makes those warning/info boxes collapsible
+  
+  # 🖋️ Code & Text Formatting
+  - pymdownx.highlight:      # Advanced syntax highlighting
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink       # Auto-links URLs correctly
+  - pymdownx.tasklist:       # Creates interactive checkboxes
+      custom_checkbox: true
+  
+  # 📑 Table of Contents Upgrades
+  - toc:
+      permalink: true        # Adds the little link icon next to headers for easy sharing
