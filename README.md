@@ -4,7 +4,7 @@ Welcome to the ultimate, open-source survival guide and knowledge base for the *
 
 Navigating a campus of this scale shouldn't require relying on scattered PDFs, outdated WhatsApp forwards, or word-of-mouth. This platform was engineered to be the single, centralized source of truth for the NITC community. 
 
-🌐 **Live Site:** [Insert your Netlify/GitHub Pages link here]
+🌐 **Live Site:** https://lighthearted-fenglisu-fba8d0.netlify.app/
 
 ## ✨ Features
 * **Comprehensive Coverage:** 90+ meticulously categorized pages covering Academics, Hostels, Student Life, Dining, and Campus Infrastructure.
